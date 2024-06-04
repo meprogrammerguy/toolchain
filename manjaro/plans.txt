@@ -1,0 +1,2 @@
+plans
+1) in router.sh send log to null device

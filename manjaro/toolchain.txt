@@ -1,0 +1,2 @@
+toolchain
+x 1) create bootable USB of manjaro ISO

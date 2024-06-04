@@ -1,0 +1,128 @@
+https://www.howtogeek.com/442101/how-to-move-your-linux-home-directory-to-another-hard-drive/
+add ubuntu to sdb (the ssd drive)
+remove Partition from sda drive (1 TB hdd)
+create new partition on 1TB drive using sudo fdisk
+sudo mkfs -t ext4 /dev/sda1
+sudo mount /dev/sda1 /mnt
+ls -ahl
+sudo rm -rf lost+found
+sudo cp -rp /home/* /mnt
+ls
+sudo mv /home /home.orig
+sudo mkdir /home
+sudo umount /dev/sda1
+sudo mount /dev/sda1 /home/
+df /dev/sda1
+sudo cp /etc/fstab /etc/fstab.orig
+sudo gnome-text-editor /etc/fstab
+add to last line of fstab
+===
+/dev/sda1	/home	ext4	defaults	0	0
+=== save file
+sudo reboot now
+df /dev/sda1
+cd /
+sudo rm -rf home.orig/
+add brave browser
+add lastpass extension
+sudo apt-get install encfs
+encfs ~/.crypt ~/decode
+sudo apt install curl
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+sudo usermod -aG nordvpn $USER
+reboot
+nordvpn login
+nordvpn set notify on
+nordvpn set autoconnect on
+nordvpn set ipv6 on
+nordvpn set lan-discovery on
+nordvpn c
+nordvpn set killswitch on
+sudo snap install yt-dlg
+sudo apt install zsh
+sudo apt install git
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+chsh -s $(which zsh)
+git config --global user.email "b65535@gmail.com"
+git config --global user.name "meprogrammerguy"
+ssh-keygen -t ed25519 -C "b65535@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "b65535@gmail.com"
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_ed25519.pub
+add keys to github
+===
+change to ssh
+git config --global url.ssh://git@github.com
+git config --global url.ssh://git@github.com/.insteadOf https://github.com/
+sudo apt install gnome-screenshot
+sudo apt install vim-gtk3
+sudo apt install qbittorrent
+sudo apt install ffmpeg
+sudo apt-get install winff
+sudo apt install ubuntu-restricted-extras
+add keepassXC			
+add nordpass
+add uBlock Origin to brave
+sudo apt install diodon
+sudo apt install caffeine
+add recoll (file indexer)
+also add all recoll missing helper files
+===
+vim stuff
+install pathogen		
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+cd ~/.vim/bundle
+bundle vim_pencil
+git clone https://github.com/preservim/vim-pencil.git
+bundle NERDtree
+git clone https://github.com/preservim/nerdtree.git
+git clone https://github.com/xolox/vim-session.git
+reload.vim
+git clone https://github.com/xolox/vim-reload.git
+session.vim
+vim-misc
+git clone https://github.com/xolox/vim-misc.git
+==
+book stuff
+sudo apt install manuskript
+install Calibre
+==
+set up git environments
+==
+pipenv setup (careful, install pipx first)
+==
+sudo apt update
+sudo apt install pipx
+pipx ensurepath
+sudo pipx ensurepath --global # optional to allow pipx actions in global scope. See "Global installation" section below.
+sudo apt-get install timeshift
+ran timeshift here before creating virtual environments
+install vlc from software
+install gimp from software
+install gnote from software
+sudo apt-get install traceroute
+sudo apt-get install mtr
+
+from home
+pipx install pipenv
+
+update Pipfile (python version)
+(delete Pipfile.lock)
+pipenv reinstall
+git config --global user.name "meprogrammerguy"
+git config --global user.email "b65535@gmail.com"
+sudo apt install python3-tk (for project mark-plumb)
+===
+tunnel to my router so I can access it from my laptop
+sudo -E ssh -i ~/.ssh/id_rsa -4 -p 1222 -L localhost:80:192.168.0.1:80 jsmith@jsmith-win
+(created a script to do this, added it to .sh)
+added FBP plugin to brave (face book purity)
+sudo apt-get install hardinfo
+rebuild vim from scratch
+=== burning iso to usb methods
+sudo dd bs=4M if=/home/jsmith/Downloads/manjaro-sway-24.0.1-240602-linux66.iso of=/dev/sdc status=progress oflag=sync (fast)
+sudo apt install gnome-multi-writer (slow/easy)
+
+
