@@ -1,2 +1,32 @@
 plans
 x 1) in router.sh send log to null device
+x 2) setup gocryptfs
+2.5) set up git push
+3) setup qbittorrent
+4) fingerprint
+x 5) sudo apt install ffmpeg
+x 6) sudo apt-get install winff
+7) add recoll (file indexer)
+x 8) set up printer
+		also set up generic cups pdf printing
+9)sudo apt install manuskript
+10) install Calibre
+x 11) set up git (done in step 2.5)
+12) set up time machine
+13) set up remmina
+x 14) install yt-dlg (https://aur.archlinux.org/youtube-dl-gui-git.git)
+15) set up vim
+16) get litererotica downloader working
+17) add aliases back to zsh config file
+18) see if ohmyzsh is loaded
+19) cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+20) write script to set windows/worspaces on startup
+
+
+
+
+
+
+
+
+

@@ -21,3 +21,5 @@ cp wallpaper.jpg ~/.config/sway/wallpaper.jpg
 (all files added to git toolchain)
 
 x 4) download sway config files (saved to git toolchain)
+turn on fingerprint authorization for sudo
+sudo pam-auth-update 
