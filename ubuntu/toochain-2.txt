@@ -70,7 +70,7 @@ also add all recoll missing helper files
 ===
 vim stuff
 install pathogen		
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \TtTWWW
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 cd ~/.vim/bundle

@@ -2,7 +2,7 @@
 title="literotica downloader"
 prompt="Pick an option:"
 options=("series" "page")
-dir_root="$HOME/decode/literotica"
+dir_root="$HOME/plain/literotica"
 log_file="$HOME/.tmp/literotica-yad.log"
 regex='(https?|ftp|file)://[-[:alnum:]\+&@#/%?=~_|!:,.;]*[-[:alnum:]\+&@#/%=~_|]'
 series_function() {
@@ -118,9 +118,11 @@ page_function() {
         	mkdir $dir_value
         	cd $dir_value
                 echo "current location: $PWD" >> $log_file
+        	lynx -dump -listonly $url_value > .dump.txt
         	lynx -dump -listonly $url_value | grep -i "?page=" >> .pages.txt
         	sed -i '$s/?page=.*//' .pages.txt
         	page_count=$(wc -l < .pages.txt)
+        	echo "page count: $page_count" >> $log_file
         	if [[ $page_count -eq 0 ]]
         	then
         		echo "0. $url_value" > .pages.txt
