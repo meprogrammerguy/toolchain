@@ -1,0 +1,23 @@
+ *** check for more when new software is added ***
+ ***
+ *** systemctl --user enable idlehack.service
+ ***
+ *** location is ~/.config/systemd
+ 
+user
+
+./user:
+default.target.wants		sway-session.target.wants
+graphical-session.target.wants	wayland-session.target.wants
+
+./user/default.target.wants:
+idlehack.service
+
+./user/graphical-session.target.wants:
+foot-server.socket  pcmanfm.service  poweralertd.service  wluma.service
+
+./user/sway-session.target.wants:
+swayrd.service	sworkstyle.service  waybar.service
+
+./user/wayland-session.target.wants:
+foot-server.service  way-displays.service

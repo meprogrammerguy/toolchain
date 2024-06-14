@@ -15,15 +15,21 @@ x 11) set up git (done in step 2.5)
 13) set up remmina
 x 14) install yt-dlg (https://aur.archlinux.org/youtube-dl-gui-git.git)
 15) set up vim
+		fix gvim not full screen?
 17) add aliases back to zsh config file
-18) see if ohmyzsh is loaded
+		fix font too small
+x 18) see if ohmyzsh is loaded
 19) fingerprint
 x 20) set up time machine
 x 21) get time correct even though VPN
 22) system maintenance
-23) get zeit running
+23) get zeit running (what is this?)
 x 24) get litererotica downloader working
 25) convert movie see if it works
+26) set up my git pipenv projects
+***
+enable all my user services, shut down and make sure they come back
+***
 
 
 
