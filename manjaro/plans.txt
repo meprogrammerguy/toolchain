@@ -14,10 +14,10 @@ x		also set up generic cups pdf printing
 x 11) set up git (done in step 2.5)
 13) set up remmina
 x 14) install yt-dlg (https://aur.archlinux.org/youtube-dl-gui-git.git)
-15) set up vim
-		fix gvim not full screen?
-17) add aliases back to zsh config file
-		fix font too small
+x 15) set up vim
+x		fix gvim not full screen?
+x 17) add aliases back to zsh config file
+x		fix font too small
 x 18) see if ohmyzsh is loaded
 19) fingerprint
 x 20) set up time machine
@@ -30,6 +30,10 @@ x 24) get litererotica downloader working
 ***
 enable all my user services, shut down and make sure they come back
 ***
+27) fast isotousb shell script
+===
+	sudo dd bs=4M if=/home/jsmith/Downloads/manjaro-sway-24.0.1-240602-linux66.iso of=/dev/sdc status=progress oflag=sync (fast)
+
 
 
 
