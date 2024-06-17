@@ -6,33 +6,63 @@ x 2.5) set up git push
 x 5) sudo apt install ffmpeg
 x 6) sudo apt-get install winff
 x 7) add recoll (file indexer)
-	fix all warning messages
+x	fix all warning messages
 x 8) set up printer
 x		also set up generic cups pdf printing
 9)sudo apt install manuskript
-10) install Calibre
+x 10) install Calibre
 x 11) set up git (done in step 2.5)
-13) set up remmina
 x 14) install yt-dlg (https://aur.archlinux.org/youtube-dl-gui-git.git)
 x 15) set up vim
 x		fix gvim not full screen?
 x 17) add aliases back to zsh config file
 x		fix font too small
 x 18) see if ohmyzsh is loaded
-19) fingerprint
 x 20) set up time machine
 x 21) get time correct even though VPN
-22) system maintenance
-23) get zeit running (what is this?)
+no 23) get zeit running (what is this?)
 x 24) get litererotica downloader working
-25) convert movie see if it works
-26) set up my git pipenv projects
 ***
-enable all my user services, shut down and make sure they come back
+x enable all my user services, shut down and make sure they come back
 ***
-27) fast isotousb shell script
+determine app ID
+swaymsg -t subscribe -m '[ "window" ]' | jq -r --unbuffered .container.app_id
+
+x 29) get weather working using wttr
+===
+Plans for father's day
+===
+x 01) convert movie see if it works
+x 02) set up remmina
+		x make sure my router.sh works
+x 03) set up my git pipenv projects
+x	pipx ensurepath
+x	sudo pipx ensurepath --global # optional to allow pipx actions in global scope. See "Global installation" section below.
+x	update Pipfile (python version)
+x	(delete Pipfile.lock)
+x	sudo apt install python3-tk (for project mark-plumb)
+04) do todo using tool Todour (installed how to use?)
+05) fingerprint
+06) figure out this
+        x "custom/idle_inhibitor",
+        "custom/dnd",
+07) fast isotousb shell script
 ===
 	sudo dd bs=4M if=/home/jsmith/Downloads/manjaro-sway-24.0.1-240602-linux66.iso of=/dev/sdc status=progress oflag=sync (fast)
+===
+08) system maintenance
+x 09) weather breaks later on in the day?
+10) fix my git progamming projects
+		do pyblitz first
+		do pyMadness
+		do mark-plumb
+x 11) make the wifi screen look better
+x 12) === no === link all my setup files to git (save local file to backup dir)
+x		a copy sh script to do it (safer)
+x 13) play with nwg-wrapper in my .sh folder
+
+
+
 
 
 
